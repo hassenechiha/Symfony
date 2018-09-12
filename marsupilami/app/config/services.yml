@@ -1,0 +1,9 @@
+parameters:
+#    parameter_name: value
+
+services:
+    fos user.doctrine registry:
+        alias:  doctrine
+    redirect.after.login:
+        class: MarsupilamiBundle\Redirection\AfterLoginRedirection
+        arguments: ["@router"]

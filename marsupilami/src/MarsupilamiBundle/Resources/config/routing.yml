@@ -1,0 +1,24 @@
+marsupilami_homepage:
+    path:     /
+    defaults: { _controller: MarsupilamiBundle:Default:index }
+Page_Marsupilami:
+    path:     /Accueil
+    defaults: { _controller: MarsupilamiBundle:Marsupilami:accueil }
+info_Marsupilami:
+    path:     /Affichage
+    defaults: { _controller: MarsupilamiBundle:Marsupilami:affichage }
+modif_Marsupilami:
+    path:     /Update
+    defaults: { _controller: MarsupilamiBundle:Marsupilami:update }
+ajout_Marsupilami:
+    path:     /Display
+    defaults: { _controller: MarsupilamiBundle:Marsupilami:display }
+ajouter_Marsupilami:
+    path:     /Add/{id}
+    defaults: { _controller: MarsupilamiBundle:Marsupilami:addfriend }
+afficher_amis:
+    path:     /ShowFriends
+    defaults: { _controller: MarsupilamiBundle:Marsupilami:affichermescontacts }
+supprimer_Marsupilami:
+    path:     /Delete/{id}
+    defaults: { _controller: MarsupilamiBundle:Marsupilami:deletefriend }
